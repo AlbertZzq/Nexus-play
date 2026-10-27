@@ -1,0 +1,112 @@
+/* The release edition has its own composition; the ratings edition keeps its sidebar. */
+[data-design="1"] .content-region { padding: 24px clamp(20px, 4vw, 72px) 28px; }
+[data-design="1"] main { max-width: 1440px; }
+[data-design="1"] .app-header { padding: 10px clamp(20px, 4vw, 72px); gap: 32px; background: #0c1729; border-color: #283951; }
+[data-design="1"] .brand { font-size: 1.5rem; letter-spacing: -0.06em; }
+[data-design="1"] .brand-mark { background: #80b6ff; border-radius: 8px; }
+[data-design="1"] .global-search { margin-left: auto; max-width: 380px; }
+[data-design="1"] .global-search label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+[data-design="1"] .top-navigation { padding: 5px clamp(20px, 4vw, 72px); background: #101e34; border-color: #283951; }
+[data-design="1"] .top-navigation .navigation { gap: clamp(14px, 2vw, 36px); }
+[data-design="1"] .top-navigation .navigation-group-label { display: none; }
+[data-design="1"] .navigation a { border-radius: 4px; font-size: 0.8rem; }
+[data-design="1"] .navigation a[aria-current="page"] { color: #fff; background: #25466f; }
+[data-design="1"] .eyebrow { color: #96b7e1; font-size: 0.65rem; letter-spacing: 0.16em; }
+[data-design="1"] h1 { font-weight: 750; font-size: clamp(2rem, 3.1vw, 3.1rem); letter-spacing: -0.055em; }
+[data-design="1"] h2 { font-size: 1.4rem; letter-spacing: -0.035em; }
+[data-design="1"] .page-header { padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+[data-design="1"] .page-header p { font-size: 0.9rem; max-width: 68ch; }
+[data-design="1"] button, [data-design="1"] .button-link { border-radius: 5px; }
+[data-design="1"] .button-link { font-size: 0.8rem; padding: 12px 18px; }
+[data-design="1"] .button-link:hover { background: #356cb4; }
+
+/* Cover-led library and a broad artwork column on game pages. */
+[data-design="1"] .discover-layout { grid-template-columns: 208px minmax(0, 1fr); gap: 28px; }
+[data-design="1"] .game-filters { padding: 20px 16px; background: #112139; border-color: #30435e; }
+[data-design="1"] .game-filters .discover-search-controls { flex-direction: column; }
+[data-design="1"] .game-filters .discover-search-controls input, [data-design="1"] .game-filters .discover-search-controls button { width: 100%; }
+[data-design="1"] .games-platform-bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px 20px; margin-bottom: 28px; padding: 12px 16px; background: #112139; border: 1px solid #2b3f5c; border-radius: 5px; }
+[data-design="1"] .games-platform-bar .editorial-filters { gap: 6px; }
+[data-design="1"] .games-platform-bar .editorial-filters button { padding: 8px 13px; font-size: 0.78rem; background: #0d192b; border-color: #30435e; }
+[data-design="1"] .games-platform-bar .editorial-filters button[aria-pressed="true"] { color: #eaf9ff; background: #1f4a63; border-color: #66d6e8; }
+[data-design="1"] .games-platform-bar > a { font-size: 0.78rem; white-space: nowrap; }
+[data-design="1"] .discover-results .game-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 20px; }
+[data-design="1"] .game-card { background: transparent; border: 0; border-radius: 0; }
+[data-design="1"] .game-card-cover { aspect-ratio: 16 / 10; object-fit: cover; border-radius: var(--radius); }
+[data-design="1"] .game-card-body, [data-design="1"] .discover-results .game-card-body { padding: 16px 0 0; }
+[data-design="1"] .game-card h3 { font-size: 1.15rem; }
+[data-design="1"] .game-card-scores { border-color: #30415a; }
+[data-design="1"] .game-overview { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 36px; }
+[data-design="1"] .details-cover img { aspect-ratio: 16 / 10; object-fit: cover; border: 0; }
+[data-design="1"] .game-overview-content .page-header { padding-bottom: 0; border: 0; }
+[data-design="1"] .game-overview h1 { font-size: clamp(2rem, 3vw, 3rem); }
+[data-design="1"] .details-section { padding-top: 24px; border-top: 1px solid var(--border); }
+[data-design="1"] .details-media-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+[data-design="1"] .details-media-grid img { aspect-ratio: 16 / 9; border: 0; }
+[data-design="1"] .details-related-layout { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 36px; }
+[data-design="1"] .details-guide, [data-design="1"] .details-review, [data-design="1"] .details-empty { border-color: #30415a; }
+
+/* Lead stories and guides have a distinct editorial hierarchy. */
+[data-design="1"] .news-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
+[data-design="1"] .editorial-card { border: 0; border-top: 1px solid var(--border); border-radius: 0; background: transparent; padding: 20px 0 0; grid-template-columns: 140px minmax(0, 1fr); gap: 20px; }
+[data-design="1"] .editorial-card-image { aspect-ratio: 16 / 10; object-fit: cover; border-radius: var(--radius); }
+[data-design="1"] .news-list > .editorial-card:first-child { grid-column: 1 / -1; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 32px; padding: 0 0 24px; border-top: 0; border-bottom: 1px solid var(--border); }
+[data-design="1"] .news-list > .editorial-card:first-child .editorial-card-image { aspect-ratio: 16 / 9; }
+[data-design="1"] .news-list > .editorial-card:first-child h3 { font-size: clamp(1.45rem, 2.3vw, 2.3rem); line-height: 1.18; }
+[data-design="1"] .news-list > .editorial-card:first-child .editorial-summary { font-size: 0.95rem; }
+[data-design="1"] .guide-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 22px; }
+[data-design="1"] .guide-grid .guide-card { grid-template-columns: minmax(0, 1fr); border: 0; padding: 0; gap: 16px; }
+[data-design="1"] .guide-grid .editorial-card-image { width: 100%; aspect-ratio: 16 / 9; }
+[data-design="1"] .guide-grid .guide-card h3 { font-size: 1.2rem; }
+[data-design="1"] .editorial-filters button { padding: 8px 14px; }
+[data-design="1"] .guide-filters { background: #112139; padding: 20px; }
+[data-design="1"] .community-columns { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 36px; }
+[data-design="1"] .community-columns .discussion-card { grid-template-columns: minmax(0, 1fr); }
+[data-design="1"] .discussion-card h3 { font-size: 1.2rem; }
+[data-design="1"] .review-rankings { border-spacing: 0 8px; }
+[data-design="1"] .review-rankings th { background: #102039; padding-block: 16px; }
+[data-design="1"] .review-rankings td { padding-block: 22px; border-color: #30415a; }
+[data-design="1"] .ranking-game > a { font-size: 1.15rem; color: var(--text); }
+[data-design="1"] .ranking-rank { color: #9bb9df; font-size: 1.1rem; }
+[data-design="1"] .deal-grid { gap: 28px 24px; }
+[data-design="1"] .deal-card { border: 0; background: transparent; }
+[data-design="1"] .deal-card-image { aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); }
+[data-design="1"] .deal-card-body { padding: 16px 0 0; }
+[data-design="1"] .release-row { background: transparent; border-width: 0 0 1px; border-radius: 0; padding: 22px 4px; }
+[data-design="1"] .release-content h3 { font-size: 1.15rem; }
+[data-design="1"] .platform-sections { display: grid; gap: 44px; }
+[data-design="1"] .platform-sections .game-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+[data-design="1"] .prototype-note { border-color: #30415a; margin-top: 48px; }
+
+@media (min-width: 1700px) {
+  [data-design="1"] .discover-results .game-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 1200px) {
+  [data-design="1"] .discover-results .game-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  [data-design="1"] .news-list .editorial-card { grid-template-columns: 100px minmax(0, 1fr); }
+  [data-design="1"] .guide-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  [data-design="1"] .platform-sections .game-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 1023px) {
+  [data-design="1"] .discover-layout { grid-template-columns: minmax(0, 1fr); }
+  [data-design="1"] .community-columns { grid-template-columns: minmax(0, 1fr); }
+  [data-design="1"] .review-rankings td { padding: 0; }
+}
+@media (max-width: 800px) {
+  [data-design="1"] .game-overview, [data-design="1"] .details-related-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  [data-design="1"] .details-cover { max-width: none; }
+  [data-design="1"] .news-list { grid-template-columns: minmax(0, 1fr); }
+  [data-design="1"] .news-list > .editorial-card:first-child { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+}
+@media (max-width: 540px) {
+  [data-design="1"] .content-region { padding: 26px 18px; }
+  [data-design="1"] .app-header { gap: 14px; padding: 14px 18px; }
+  [data-design="1"] .global-search { max-width: none; }
+  [data-design="1"] .discover-results .game-grid, [data-design="1"] .guide-grid, [data-design="1"] .platform-sections .game-grid, [data-design="1"] .details-media-grid { grid-template-columns: minmax(0, 1fr); }
+  [data-design="1"] .news-list .editorial-card { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  [data-design="1"] .news-list .editorial-card-image { aspect-ratio: 16 / 9; }
+}
+/* P1 storefront: scoped to home so the ratings edition retains its layout. */
+[data-design="1"] .release-review { display: grid; gap: 5px; font-size: .7rem; padding-top: 8px; overflow-wrap: anywhere; }
+[data-design="1"] .release-review strong { color: #a6d8ee; font-size: .85rem; }
+[data-design="1"] .release-review small { color: #a9bdd4; }

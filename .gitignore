@@ -1,0 +1,8 @@
+.worktrees/
+.superpowers/
+.cache/
+artifacts/
+node_modules/
+dist/
+*.tsbuildinfo
+.vercel/

@@ -1,0 +1,54 @@
+/* P1 composition only; P2 retains its existing layout and palette. */
+.app-shell[data-design="1"] { --background: #0d1016; --surface: #171b22; --surface-raised: #222831; --border: #ffffff24; --muted: #a9b1be; --accent: #78d9e9; --accent-background: #25464e; --focus: #9fe8f3; padding-top: var(--p1-header-height, 80px); }
+.app-shell[data-design="1"] .app-header { position: fixed; inset: 0 0 auto; width: 100%; }
+.app-shell[data-design="1"] .compact-navigation { position: fixed; inset: var(--p1-header-height, 80px) 0 auto; z-index: 49; max-height: calc(100dvh - var(--p1-header-height, 80px)); overflow-y: auto; background: #151b24; }
+.app-shell[data-design="1"] main [id], .app-shell[data-design="1"] main { scroll-margin-top: calc(var(--p1-header-height, 80px) + 16px); }
+.app-shell[data-design="1"] .game-filters { top: calc(var(--p1-header-height, 80px) + 16px); background: #171b22; border-color: #ffffff24; }
+.app-shell[data-design="1"] .games-platform-bar, .app-shell[data-design="1"] .guide-filters { background: #171b22; border-color: #ffffff24; }
+.app-shell[data-design="1"] .games-platform-bar .editorial-filters button { background: #151a22; border-color: #ffffff24; }
+.app-shell[data-design="1"] .eyebrow { color: #a7b9c2; }
+.app-shell[data-design="1"] .p1-library-view { margin-bottom: 24px; }
+.app-shell[data-design="1"] .game-card-meta { flex-wrap: wrap; gap: 5px 12px; font-size: .67rem; }
+.app-shell[data-design="1"] .game-card h3 { font-size: 1rem; margin-block: 9px; }
+.app-shell[data-design="1"] .game-card-platforms { font-size: .72rem; }
+.app-shell[data-design="1"] .game-card-body .release-review { border-top: 1px solid var(--border); margin-top: 12px; font-size: .65rem; }
+.app-shell[data-design="1"] .game-card-body .release-review strong { font-size: .74rem; }
+[data-design="1"] .p1-latest-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+[data-design="1"] .p1-latest-grid .editorial-card { display: flex; flex-direction: column; gap: 15px; padding-top: 0; border-top: 0; }
+[data-design="1"] .p1-latest-grid .editorial-card-image { height: auto; aspect-ratio: 16 / 9; }
+[data-design="1"] .p1-latest-grid .editorial-card-content { flex: 1; }
+[data-design="1"] .p1-latest-grid h3 { font-size: 1.05rem; }
+[data-design="1"] .p1-news-release { color: var(--muted); font-size: .72rem; }
+[data-design="1"] .p1-news-card { overflow-wrap: anywhere; }
+[data-design="1"] .guide-detail-body section { padding-top: 16px; border-top: 1px solid var(--border); }
+[data-design="1"] .guide-detail-body ol { padding-left: 22px; }
+[data-design="1"] .guide-detail-body li { margin-bottom: 10px; }
+[data-design="1"] .guide-section-media { margin: 18px 0; }
+[data-design="1"] .guide-section-media img { display: block; width: 100%; height: auto; }
+[data-design="1"] .guide-section-media figcaption { font-size: .72rem; color: var(--muted); margin-top: 8px; }
+@media (max-width: 900px) {
+ [data-design="1"] .p1-latest-grid { grid-template-columns: minmax(0, 1fr); }
+ [data-design="1"] .p1-latest-grid .editorial-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); }
+}
+@media (max-width: 640px) {
+ .app-shell[data-design="1"] .global-search { min-width: 0; }
+ .app-shell[data-design="1"] .search-controls input { min-width: 0; }
+ [data-design="1"] .p1-latest-grid .editorial-card { grid-template-columns: minmax(0, 1fr); }
+ [data-design="1"] .anticipated-calendar { gap: 12px; }
+ [data-design="1"] .anticipated-calendar > .eyebrow,
+ [data-design="1"] .anticipated-calendar > .details-meta { display: none; }
+ [data-design="1"] .anticipated-calendar .page-header { padding-bottom: 14px; }
+ [data-design="1"] .anticipated-calendar .page-header p { font-size: .8rem; }
+ .app-shell[data-design="1"] .anticipated-filters { padding: 10px; gap: 12px; }
+ [data-design="1"] .anticipated-filter-group { width: 100%; gap: 5px; }
+ [data-design="1"] .anticipated-filter-group .editorial-filters { gap: 4px; }
+ .app-shell[data-design="1"] .anticipated-filter-group button { padding: 7px 8px; font-size: .67rem; }
+ [data-design="1"] .anticipated-month-heading { margin-bottom: 12px; }
+ [data-design="1"] .anticipated-count { margin-top: 0; }
+ [data-design="1"] .anticipated-months { gap: 26px; }
+ [data-design="1"] .anticipated-grid { gap: 16px; }
+ [data-design="1"] .anticipated-body { padding: 14px; gap: 8px; }
+ [data-design="1"] .anticipated-card h3 { font-size: 1rem; }
+ [data-design="1"] .anticipated-trending { padding: 8px 10px; }
+ [data-design="1"] .anticipated-links { padding-top: 8px; }
+}
